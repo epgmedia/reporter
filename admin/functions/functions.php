@@ -45,7 +45,7 @@ function generate_options_css($newdata) {
 add_action('wp_head', 'echo_reporter_options', 100);
 function echo_reporter_options() {
 
-	echo '<style>' . get_option('reporter-options') . '</style>';
+	echo '<style type="text/css">' . get_option('reporter-options') . '</style>';
 }
 
 
